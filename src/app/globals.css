@@ -28,6 +28,10 @@
   font-size: 24px;
   font-weight: 700;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+}
 .image {
   width: 450px;
   height: 250px;

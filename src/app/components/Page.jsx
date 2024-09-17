@@ -24,10 +24,10 @@ const CountryDetails = (datas) => {
                 <div><span className="text">Area: </span> {area}</div>
                 <div><span className="text">Borders: </span>{borders?.map((border)=>{return(<span>{border}, </span>)})}</div>
                 <div><span className="text">Timezones: </span>{timezones?.map((timezone)=>{return(<span>{timezone}, </span>)})}</div>
-                <div>
+                <div className="column">
                 <div className="text2">Maps </div>
-                <div>{mapGoogle}</div>
-                <div>{mapStreet}</div>
+                <a href={mapGoogle}>View on Google map</a>
+                <a href={mapStreet}>View on Open Street map</a>
                 </div>
                 <div>
                 <div className="text2">Coat of arms </div>

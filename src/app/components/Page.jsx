@@ -11,6 +11,7 @@ const CountryDetails = (datas) => {
     const borders = country?.borders
     const timezones = country?.timezones
     const coatOfArms = country?.coatOfArms.png
+    console.log(coatOfArms)
     const mapGoogle = country?.maps.googleMaps
     const mapStreet = country?.maps.openStreetMaps
     return(
@@ -30,11 +31,9 @@ const CountryDetails = (datas) => {
                 <a href={mapStreet}>View on Open Street map</a>
                 </div>
                 <div>
-                    {coatOfArms === "" ? null : <div className="text2">Coat of arms </div>}
-
-                <img src={coatOfArms} className="image2"/>
+                    {coatOfArms === undefined ? null : <div><div className="text2">Coat of arms </div>
+                    <img src={coatOfArms} className="image2"/></div>}
                 </div>
-
         </div>
 
     );

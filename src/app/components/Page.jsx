@@ -30,7 +30,8 @@ const CountryDetails = (datas) => {
                 <a href={mapStreet}>View on Open Street map</a>
                 </div>
                 <div>
-                <div className="text2">Coat of arms </div>
+                    {coatOfArms === "" ? null : <div className="text2">Coat of arms </div>}
+
                 <img src={coatOfArms} className="image2"/>
                 </div>
 
